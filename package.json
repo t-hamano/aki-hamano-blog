@@ -1,0 +1,37 @@
+{
+	"name": "aki-hamano-blog",
+	"version": "3.2.0",
+	"description": "Block theme for my blog.",
+	"author": "Aki Hamano",
+	"license": "GPL-2.0-or-later",
+	"keywords": [
+		"block-theme",
+		"wordpress",
+		"theme"
+	],
+	"homepage": "https://github.com/t-hamano/aki-hamano-blog",
+	"repository": "git+https://github.com/t-hamano/aki-hamano-blog.git",
+	"bugs": {
+		"url": "https://github.com/t-hamano/aki-hamano-blog/issues"
+	},
+	"engines": {
+		"node": ">=20.0.0",
+		"npm": ">=10.0.0"
+	},
+	"volta": {
+		"node": "20.11.1",
+		"npm": "10.5.0"
+	},
+	"devDependencies": {
+		"@wordpress/env": "^9.5.0",
+		"@wordpress/scripts": "^27.4.0"
+	},
+	"scripts": {
+		"wp-env": "wp-env",
+		"lint": "npm run lint:css && npm run lint:php && npm run lint:pkg-json",
+		"lint:css": "wp-scripts lint-style",
+		"lint:php": "composer lint",
+		"lint:pkg-json": "wp-scripts lint-pkg-json",
+		"format": "wp-scripts format"
+	}
+}

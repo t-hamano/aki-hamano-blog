@@ -1,0 +1,208 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"settings": {
+		"layout": {
+			"contentSize": "840px"
+		},
+		"useRootPaddingAwareAlignments": true,
+		"color": {
+			"defaultPalette": false,
+			"custom": false,
+			"palette": [
+				{
+					"color": "#fcfcfc",
+					"name": "Base",
+					"slug": "base"
+				},
+				{
+					"color": "#111111",
+					"name": "Contrast",
+					"slug": "contrast"
+				},
+				{
+					"color": "#636363",
+					"name": "Contrast / Two",
+					"slug": "contrast-2"
+				},
+				{
+					"color": "#eee",
+					"name": "Gray",
+					"slug": "gray"
+				}
+			],
+			"defaultGradients": false,
+			"customGradient": false,
+			"gradients": [],
+			"defaultDuotone": false,
+			"customDuotone": false
+		},
+		"spacing": {
+			"blockGap": true,
+			"padding": true,
+			"margin": true,
+			"spacingScale": {
+				"steps": 7,
+				"increment": 2,
+				"mediumStep": 2,
+				"operator": "*",
+				"unit": "rem"
+			}
+		},
+		"typography": {
+			"fluid": true,
+			"fontSizes": [
+				{
+					"fluid": false,
+					"name": "Small",
+					"size": "0.9rem",
+					"slug": "small"
+				},
+				{
+					"fluid": false,
+					"name": "Medium",
+					"size": "1.05rem",
+					"slug": "medium"
+				},
+				{
+					"fluid": {
+						"min": "1.39rem",
+						"max": "1.85rem"
+					},
+					"name": "Large",
+					"size": "1.85rem",
+					"slug": "large"
+				},
+				{
+					"fluid": {
+						"min": "1.85rem",
+						"max": "2.5rem"
+					},
+					"name": "Extra Large",
+					"size": "2.5rem",
+					"slug": "x-large"
+				},
+				{
+					"fluid": {
+						"min": "2.5rem",
+						"max": "3.27rem"
+					},
+					"name": "Extra Extra Large",
+					"size": "3.27rem",
+					"slug": "xx-large"
+				}
+			]
+		}
+	},
+	"styles": {
+		"typography": {
+			"fontFamily": "\"Helvetica Neue\", Arial, \"Hiragino Kaku Gothic ProN\", \"Hiragino Sans\", Meiryo, sans-serif;",
+			"fontSize": "var(--wp--preset--font-size--medium)"
+		},
+		"color": {
+			"background": "var(--wp--preset--color--base)",
+			"text": "var(--wp--preset--color--contrast)"
+		},
+		"spacing": {
+			"blockGap": "1.5rem",
+			"padding": {
+				"left": "var(--wp--preset--spacing--50)",
+				"right": "var(--wp--preset--spacing--50)"
+			}
+		},
+		"blocks": {
+			"core/list": {
+				"spacing": {
+					"padding": {
+						"left": "1.5em"
+					}
+				}
+			},
+			"core/site-title": {
+				"typography": {
+					"textTransform": "uppercase"
+				},
+				"elements": {
+					"link": {
+						"typography": {
+							"fontWeight": "bold",
+							"textDecoration": "none"
+						}
+					}
+				}
+			},
+			"snow-monkey-forms/item": {
+				"spacing": {
+					"margin": {
+						"bottom": "var(--wp--preset--spacing--50)"
+					}
+				},
+				"css": "& input{width: 100%} & .smf-item__col--label{margin-bottom:var(--wp--preset--spacing--20)}"
+			}
+		},
+		"elements": {
+			"heading": {
+				"spacing": {
+					"margin": {
+						"top": "var(--wp--preset--spacing--80)"
+					}
+				}
+			},
+			"h1": {
+				"typography": {
+					"fontSize": "var(--wp--preset--font-size--xx-large)",
+					"lineHeight": "1.15"
+				}
+			},
+			"h2": {
+				"typography": {
+					"fontSize": "var(--wp--preset--font-size--x-large)"
+				}
+			},
+			"h3": {
+				"typography": {
+					"fontSize": "var(--wp--preset--font-size--large)"
+				}
+			},
+			"h4": {
+				"typography": {
+					"fontSize": "clamp(1.1rem, 1.1rem + ((1vw - 0.2rem) * 0.767), 1.5rem)"
+				}
+			},
+			"h5": {
+				"typography": {
+					"fontSize": "var(--wp--preset--font-size--medium)"
+				}
+			},
+			"h6": {
+				"typography": {
+					"fontSize": "var(--wp--preset--font-size--small)"
+				}
+			},
+			"button": {
+				"color": {
+					"background": "var(--wp--preset--color--contrast)"
+				},
+				"border": {
+					"radius": "0"
+				},
+				":hover": {
+					"color": {
+						"background": "var(--wp--preset--color--contrast-2)"
+					}
+				},
+				"css": "&:focus {outline-offset:2px;}"
+			},
+			"link": {
+				"color": {
+					"text": "inherit"
+				},
+				":hover": {
+					"typography": {
+						"textDecoration": "none"
+					}
+				}
+			}
+		}
+	}
+}

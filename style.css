@@ -1,0 +1,36 @@
+/*
+Theme Name: Aki Hamano Blog
+Author: the Aki Hamano
+Author URI: https://profiles.wordpress.org/wildworks/
+Description: Block theme for my blog.
+Requires at least: 6.5
+Tested up to: 6.5
+Requires PHP: 8.1
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: aki-hamano-blog
+*/
+
+.bogo-language-switcher {
+	padding: 0;
+	display: flex;
+	font-size: var(--wp--preset--font-size--small);
+	gap: 0.5rem;
+}
+
+.bogo-language-switcher li.current {
+	font-weight: bold;
+}
+
+.smf-action .smf-button-control__control {
+	background: var(--wp--preset--color--contrast);
+	color: #fff;
+	padding: calc(0.667em + 2px) calc(1.333em + 2px);
+	font: inherit;
+}
+
+.smf-action .smf-button-control__control:focus {
+	outline: 2px solid var(--wp--preset--color--contrast);
+	border-color: initial;
+}
