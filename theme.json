@@ -92,6 +92,11 @@
 					"slug": "xx-large"
 				}
 			]
+		},
+		"custom": {
+			"fontFamily": {
+				"code": "SFMono-Regular, Consolas, \"Liberation Mono\", Menlo, Courier, monospace"
+			}
 		}
 	},
 	"styles": {
@@ -131,13 +136,22 @@
 					}
 				}
 			},
+			"core/code": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--code)"
+				},
+				"color": {
+					"background": "var(--wp--preset--color--gray)"
+				},
+				"css": "& code{padding:1em 1.5em;}"
+			},
 			"snow-monkey-forms/item": {
 				"spacing": {
 					"margin": {
 						"bottom": "var(--wp--preset--spacing--50)"
 					}
 				},
-				"css": "& input{width: 100%} & .smf-item__col--label{margin-bottom:var(--wp--preset--spacing--20)}"
+				"css": "& input{width:100%} & .smf-item__col--label{margin-bottom:var(--wp--preset--spacing--20)}"
 			}
 		},
 		"elements": {
@@ -146,7 +160,8 @@
 					"margin": {
 						"top": "var(--wp--preset--spacing--80)"
 					}
-				}
+				},
+				"css": "& +h1,+h2,+h3,+h4,+h5,+h6{margin-top:var(--wp--preset--spacing--40);}"
 			},
 			"h1": {
 				"typography": {

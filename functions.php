@@ -10,6 +10,11 @@ function aki_hamano_blog_wp_enqueue_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'aki_hamano_blog_wp_enqueue_scripts' );
 
+function aki_hamano_blog_after_setup_theme() {
+	add_editor_style( 'editor-style.css' );
+}
+add_action( 'after_setup_theme', 'aki_hamano_blog_after_setup_theme' );
+
 //Bogo表示カスタマイズ
 add_filter( 'bogo_use_flags', '__return_false' );
 

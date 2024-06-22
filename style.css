@@ -12,6 +12,17 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: aki-hamano-blog
 */
 
+/* Elements */
+code {
+	background-color: var(--wp--preset--color--gray);
+	border-radius: 3px;
+	margin: 0 0.2em;
+	font-size: 0.9em;
+	padding: 0.05em 0.3em;
+	font-family: var(--wp--custom--font-family--code);
+}
+
+/* Plugins */
 .bogo-language-switcher {
 	padding: 0;
 	display: flex;
