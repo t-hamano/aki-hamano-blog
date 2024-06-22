@@ -152,6 +152,9 @@
 					"background": "var(--wp--preset--color--gray)"
 				}
 			},
+			"core/table": {
+				"css": "& thead,tfoot{border:none!important} & th{background:var(--wp--preset--color--gray);text-align:left}"
+			},
 			"snow-monkey-forms/item": {
 				"spacing": {
 					"margin": {
