@@ -96,13 +96,18 @@
 		"custom": {
 			"fontFamily": {
 				"code": "SFMono-Regular, Consolas, \"Liberation Mono\", Menlo, Courier, monospace"
+			},
+			"lineHeight": {
+				"base": 1.75,
+				"heading": 1.15
 			}
 		}
 	},
 	"styles": {
 		"typography": {
 			"fontFamily": "\"Helvetica Neue\", Arial, \"Hiragino Kaku Gothic ProN\", \"Hiragino Sans\", Meiryo, sans-serif;",
-			"fontSize": "var(--wp--preset--font-size--medium)"
+			"fontSize": "var(--wp--preset--font-size--medium)",
+			"lineHeight": "var(--wp--custom--line-height--base)"
 		},
 		"color": {
 			"background": "var(--wp--preset--color--base)",
@@ -138,12 +143,11 @@
 			},
 			"core/code": {
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--code)"
+					"fontFamily": "var(--wp--custom--font-family--code)"
 				},
 				"color": {
 					"background": "var(--wp--preset--color--gray)"
-				},
-				"css": "& code{padding:1em 1.5em;}"
+				}
 			},
 			"snow-monkey-forms/item": {
 				"spacing": {
@@ -156,12 +160,15 @@
 		},
 		"elements": {
 			"heading": {
+				"typography": {
+					"lineHeight": "var(--wp--custom--line-height--heading)"
+				},
 				"spacing": {
 					"margin": {
 						"top": "var(--wp--preset--spacing--80)"
 					}
 				},
-				"css": "& +h1,+h2,+h3,+h4,+h5,+h6{margin-top:var(--wp--preset--spacing--40);}"
+				"css": "& +h1,+h2,+h3,+h4,+h5,+h6{margin-top:var(--wp--preset--spacing--40);} & word-break:break-word;"
 			},
 			"h1": {
 				"typography": {
