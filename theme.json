@@ -141,6 +141,9 @@
 					}
 				}
 			},
+			"core/post-terms": {
+				"css": "&.taxonomy-post_tag a{text-decoration:none;background:var(--wp--preset--color--gray);border-radius:3px;margin:0 0.5em 0 0;font-size:0.9em;padding:0.2em 0.6em;} &.taxonomy-post_tag .wp-block-post-terms__separator{display:none}"
+			},
 			"core/code": {
 				"typography": {
 					"fontFamily": "var(--wp--custom--font-family--code)"
