@@ -6,5 +6,6 @@ module.exports = {
 	rules: {
 		'font-weight-notation': null,
 		'selector-class-pattern': null,
+		'selector-id-pattern': null,
 	},
 };

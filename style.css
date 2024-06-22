@@ -34,6 +34,44 @@ code {
 	font-weight: bold;
 }
 
+#toc_container {
+	margin: 0;
+	border: 1px solid var(--wp--preset--color--contrast-2);
+	padding: var(--wp--preset--spacing--50);
+}
+
+.toc_title {
+	font-weight: bold;
+	margin: 0 0 var(--wp--preset--spacing--30);
+}
+
+.toc_list {
+	margin: 0;
+	padding: 0;
+	font-size: var(--wp--preset--font-size--small);
+	list-style: none;
+}
+
+.toc_list ul {
+	padding-left: 1em;
+	list-style: none;
+}
+
+.toc_list a {
+	text-decoration: none;
+}
+
+.toc_number {
+	margin-right: 0.5em;
+}
+
+@media (hover: hover) {
+
+	.toc_list a:hover {
+		text-decoration: underline;
+	}
+}
+
 .smf-action .smf-button-control__control {
 	background: var(--wp--preset--color--contrast);
 	color: #fff;
