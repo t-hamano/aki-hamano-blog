@@ -50,6 +50,7 @@ add_filter( 'render_block_core/post-date', 'aki_hamano_blog_render_block_core_po
 // Don't display flags in Bogo plugin.
 add_filter( 'bogo_use_flags', '__return_false' );
 
+// Change the language switcher links in Bogo plugin.
 function aki_hamano_blog_bogo_language_switcher_links( $links ) {
 	foreach ( $links as &$link ) {
 		if ( 'ja' === $link['locale'] ) {
