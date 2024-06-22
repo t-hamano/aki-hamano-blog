@@ -1,0 +1,23 @@
+name: Deploy
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  web-deploy:
+    name: Deploy Website Every Commit
+    runs-on: ubuntu-latest
+    steps:
+    - name: Get Latest Code
+      uses: actions/checkout@v4
+    - name: Sync Files
+      uses: SamKirkland/web-deploy@v1
+      with:
+        target-server: ${{ secrets.TARGET_SERVER }}
+        remote-user: ${{ secrets.REMOTE_USER }}
+        private-ssh-key: ${{ secrets.PRIVATE_SSH_KEY }}
+        ssh-port: ${{ secrets.SSH_PORT }}
+        destination-path: ${{ secrets.DESTONATION_PATH }}
+        rsync-options: --archive --compress --delete-after --human-readable --exclude=.git* --exclude=.git/--exclude=.vscode/ --exclude=node_modules/ --exclude=vendor/ --exclude=.editorconfig --exclude=.stylelintrc.js --exclude=.wp-env.json --exclude=composer.json --exclude=composer.lock --exclude=LICENSE --exclude=package.json --exclude= --exclude=package-lock.json --exclude=phpcs.ruleset.xml --exclude=readme.txt
