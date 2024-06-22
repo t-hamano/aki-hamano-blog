@@ -159,6 +159,22 @@
 					}
 				},
 				"css": "& input{width:100%} & .smf-item__col--label{margin-bottom:var(--wp--preset--spacing--20)}"
+			},
+			"simpletoc/toc": {
+				"border": {
+					"color": "var(--wp--preset--color--contrast-2)",
+					"width": "1px",
+					"style": "solid"
+				},
+				"spacing": {
+					"padding": {
+						"top": "var(--wp--preset--spacing--40)",
+						"right": "var(--wp--preset--spacing--40)",
+						"bottom": "var(--wp--preset--spacing--40)",
+						"left": "var(--wp--preset--spacing--40)"
+					}
+				},
+				"css": "& .simpletoc-title{margin:0 0 var(--wp--preset--spacing--40);font-size: inherit} & ul{margin:0;padding-left:1.5em;font-size:var(--wp--preset--font-size--small)}"
 			}
 		},
 		"elements": {
