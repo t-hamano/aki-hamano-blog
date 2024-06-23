@@ -151,7 +151,8 @@
 				},
 				"color": {
 					"background": "var(--wp--preset--color--gray)"
-				}
+				},
+				"css": "& code {font-size:var(--wp--preset--font-size--small)!important}"
 			},
 			"core/table": {
 				"css": "& thead,tfoot{border:none!important} & th{background:var(--wp--preset--color--gray);text-align:left}"
