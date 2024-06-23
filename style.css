@@ -22,6 +22,32 @@ code {
 	font-family: var(--wp--custom--font-family--code);
 }
 
+/* Blocks */
+.wp-block-code-wrapper {
+	position: relative;
+}
+
+.wp-block-code-wrapper figcaption {
+	position: absolute;
+	top: 0.2rem;
+	z-index: 1;
+	right: 0.2rem;
+	background-color: var(--wp--preset--color--gray);
+	font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+	font-size: var(--wp--preset--font-size--small);
+	padding: 0 0.5em;
+	font-weight: bold;
+	border-radius: 2px;
+}
+
+.wp-block-code-wrapper .wp-block-code {
+	margin: 0;
+}
+
+.wp-block-code-wrapper:has(figcaption) .wp-block-code {
+	padding-top: 2.5rem;
+}
+
 /* Plugins */
 .bogo-language-switcher {
 	padding: 0;

@@ -46,6 +46,20 @@ function aki_hamano_blog_render_block_core_post_date( $block_content, $block ) {
 }
 add_filter( 'render_block_core/post-date', 'aki_hamano_blog_render_block_core_post_date', 10, 2 );
 
+// Wrap the code block in a figure element and inject the anchor as the figcaption.
+function aki_hamano_blog_render_block_core_code( $block_content, $block ) {
+	$processor  = new WP_HTML_Tag_Processor( $block_content );
+	$figcaption = '';
+	if ( $processor->next_tag( 'pre' ) ) {
+		$id = $processor->get_attribute( 'id' );
+		if ( $id ) {
+			$figcaption = '<figcaption>' . $id . '</figcaption>';
+		}
+	}
+	$block_content = '<figure class="wp-block-code-wrapper">' . $figcaption . $block_content . '</figure>';
+	return $block_content;
+}
+add_filter( 'render_block_core/code', 'aki_hamano_blog_render_block_core_code', 10, 2 );
 
 // Don't display flags in Bogo plugin.
 add_filter( 'bogo_use_flags', '__return_false' );
