@@ -36,7 +36,6 @@ code {
 	font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
 	font-size: var(--wp--preset--font-size--small);
 	padding: 0 0.5em;
-	font-weight: bold;
 	border-radius: 2px;
 }
 
