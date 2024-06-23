@@ -51,6 +51,7 @@
 		},
 		"typography": {
 			"fluid": true,
+			"defaultFontSizes": false,
 			"fontSizes": [
 				{
 					"fluid": false,
