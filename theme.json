@@ -156,7 +156,10 @@
 				"css": "& code {font-size:var(--wp--preset--font-size--small)!important}"
 			},
 			"core/table": {
-				"css": "& thead,tfoot{border:none!important} & th{background:var(--wp--preset--color--gray);text-align:left}"
+				"typography": {
+					"lineHeight": "var(--wp--custom--line-height--heading)"
+				},
+				"css": "& thead,tfoot{border:none!important} & th{background:var(--wp--preset--color--gray);text-align:left;white-space:nowrap}"
 			},
 			"snow-monkey-forms/item": {
 				"spacing": {
