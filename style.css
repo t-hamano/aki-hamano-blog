@@ -84,8 +84,9 @@ div.code-toolbar > .toolbar {
 	align-items: center;
 	gap: 0.3rem;
 	top: 0.3rem;
-	right: 0.3rem;
-	max-width: calc(100% - 0.6rem);
+	left: 0.3rem;
+	width: calc(100% - 0.6rem);
+	justify-content: space-between;
 }
 
 div.code-toolbar.code-toolbar > .toolbar > .toolbar-item {
@@ -95,6 +96,7 @@ div.code-toolbar.code-toolbar > .toolbar > .toolbar-item {
 
 div.code-toolbar.code-toolbar > .toolbar > .toolbar-item:has(.copy-to-clipboard-button) {
 	overflow: initial;
+	margin-left: auto;
 }
 
 div.code-toolbar.code-toolbar > .toolbar > .toolbar-item > :where(a, button, span) {
