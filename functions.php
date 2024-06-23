@@ -2,16 +2,16 @@
 // Enqueue front end styles and scripts.
 function aki_hamano_blog_wp_enqueue_scripts() {
 	wp_enqueue_style(
+		'aki-hamano-blog-prism',
+		get_stylesheet_directory_uri() . '/assets/lib/prism/prism.css',
+		array(),
+	);
+
+	wp_enqueue_style(
 		'aki-hamano-blog',
 		get_stylesheet_uri(),
 		array(),
 		filemtime( get_stylesheet_directory() . '/style.css' )
-	);
-
-	wp_enqueue_style(
-		'aki-hamano-blog-prism',
-		get_stylesheet_directory_uri() . '/assets/lib/prism/prism.css',
-		array(),
 	);
 
 	wp_enqueue_script(
@@ -48,15 +48,15 @@ add_filter( 'render_block_core/post-date', 'aki_hamano_blog_render_block_core_po
 
 // Wrap the code block in a figure element and inject the anchor as the figcaption.
 function aki_hamano_blog_render_block_core_code( $block_content, $block ) {
-	$processor  = new WP_HTML_Tag_Processor( $block_content );
-	$figcaption = '';
+	$processor = new WP_HTML_Tag_Processor( $block_content );
 	if ( $processor->next_tag( 'pre' ) ) {
 		$id = $processor->get_attribute( 'id' );
 		if ( $id ) {
-			$figcaption = '<figcaption>' . $id . '</figcaption>';
+			$processor->set_attribute( 'data-label', $id );
+			$block_content = $processor->get_updated_html();
 		}
 	}
-	$block_content = '<figure class="wp-block-code-wrapper">' . $figcaption . $block_content . '</figure>';
+
 	return $block_content;
 }
 add_filter( 'render_block_core/code', 'aki_hamano_blog_render_block_core_code', 10, 2 );

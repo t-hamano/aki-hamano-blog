@@ -23,32 +23,9 @@ code {
 }
 
 /* Blocks */
-.wp-block-code-wrapper {
-	position: relative;
-}
-
-.wp-block-code-wrapper figcaption {
-	position: absolute;
-	top: 0.2rem;
-	z-index: 1;
-	left: 0.2rem;
-	background-color: var(--wp--preset--color--gray);
-	font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
-	font-size: var(--wp--preset--font-size--small);
-	padding: 0 0.5em;
-	border-radius: 2px;
-	max-width: calc(100% - 0.4rem);
-	overflow: hidden;
-	text-overflow: ellipsis;
-	white-space: nowrap;
-}
-
-.wp-block-code-wrapper .wp-block-code {
-	margin: 0;
-}
-
-.wp-block-code-wrapper:has(figcaption) .wp-block-code {
-	padding-top: 2.5rem;
+pre.wp-block-code[class*="language-"] {
+	padding-top: 3rem;
+	padding-bottom: 2rem;
 }
 
 /* Plugins */
@@ -101,9 +78,49 @@ code {
 	}
 }
 
+div.code-toolbar > .toolbar {
+	opacity: 1;
+	display: flex;
+	align-items: center;
+	gap: 0.3rem;
+	top: 0.3rem;
+	right: 0.3rem;
+	max-width: calc(100% - 0.6rem);
+}
+
+div.code-toolbar.code-toolbar > .toolbar > .toolbar-item {
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+div.code-toolbar.code-toolbar > .toolbar > .toolbar-item:has(.copy-to-clipboard-button) {
+	overflow: initial;
+}
+
+div.code-toolbar.code-toolbar > .toolbar > .toolbar-item > :where(a, button, span) {
+	display: block;
+	line-height: inherit;
+	border-radius: 2px;
+	color: var(--wp--preset--color--white);
+	background: var(--wp--preset--color--contrast-2);
+	box-shadow: none;
+	font-size: var(--wp--preset--font-size--small);
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+div.code-toolbar > .toolbar > .toolbar-item > :where(a, button) {
+	cursor: pointer;
+}
+
+div.code-toolbar.code-toolbar > .toolbar > .toolbar-item > :where(a, button, span):focus,
+div.code-toolbar.code-toolbar > .toolbar > .toolbar-item > :where(a, button, span):hover {
+	color: var(--wp--preset--color--white);
+}
+
 .smf-action .smf-button-control__control {
 	background: var(--wp--preset--color--contrast);
-	color: #fff;
+	color: var(--wp--preset--color--white);
 	padding: calc(0.667em + 2px) calc(1.333em + 2px);
 	font: inherit;
 }
