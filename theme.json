@@ -161,6 +161,27 @@
 				},
 				"css": "& thead,tfoot{border:none!important} & th{background:var(--wp--preset--color--gray);text-align:left;white-space:nowrap}"
 			},
+			"core/quote": {
+				"color": {
+					"background": "var(--wp--preset--color--gray)"
+				},
+				"border": {
+					"left": {
+						"color": "var(--wp--preset--color--contrast)",
+						"style": "solid",
+						"width": "2px"
+					}
+				},
+				"spacing": {
+					"padding": {
+						"top": "var(--wp--preset--spacing--40)",
+						"right": "var(--wp--preset--spacing--40)",
+						"bottom": "var(--wp--preset--spacing--40)",
+						"left": "var(--wp--preset--spacing--60)"
+					}
+				},
+				"css": "& cite{font-size:0.8em}"
+			},
 			"snow-monkey-forms/item": {
 				"spacing": {
 					"margin": {
