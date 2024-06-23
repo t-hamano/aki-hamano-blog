@@ -182,6 +182,9 @@
 				},
 				"css": "& cite{font-size:0.8em}"
 			},
+			"core/post-navigation-link": {
+				"css": "&.post-navigation-link-next{margin-left:auto!important}"
+			},
 			"snow-monkey-forms/item": {
 				"spacing": {
 					"margin": {
