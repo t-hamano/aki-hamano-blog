@@ -31,7 +31,7 @@ code {
 	position: absolute;
 	top: 0.2rem;
 	z-index: 1;
-	right: 0.2rem;
+	left: 0.2rem;
 	background-color: var(--wp--preset--color--gray);
 	font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
 	font-size: var(--wp--preset--font-size--small);
