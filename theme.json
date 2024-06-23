@@ -185,6 +185,16 @@
 			"core/post-navigation-link": {
 				"css": "&.post-navigation-link-next{margin-left:auto!important}"
 			},
+			"core/categories": {
+				"css": "&.wp-block-categories-list{padding-left:1.5em}"
+			},
+			"core/separator": {
+				"border": {
+					"top": {
+						"width": "1px"
+					}
+				}
+			},
 			"snow-monkey-forms/item": {
 				"spacing": {
 					"margin": {
