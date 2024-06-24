@@ -78,6 +78,13 @@ function aki_hamano_blog_bogo_language_switcher_links( $links ) {
 }
 add_filter( 'bogo_language_switcher_links', 'aki_hamano_blog_bogo_language_switcher_links' );
 
+// Support custom post type with bogo.
+function aki_hamano_blog_bogo_localizable_post_types( $localizable ) {
+	$localizable[] = 'event';
+	return $localizable;
+}
+add_filter( 'bogo_localizable_post_types', 'aki_hamano_blog_bogo_localizable_post_types', 10 );
+
 // Change URLs of navigation links to English version.
 function aki_hamano_blog_block_core_navigation_render_inner_blocks( $rendered_blocks ) {
 	foreach ( $rendered_blocks as $key => $block ) {
