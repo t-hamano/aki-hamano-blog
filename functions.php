@@ -46,7 +46,7 @@ function aki_hamano_blog_render_block_core_post_date( $block_content, $block ) {
 }
 add_filter( 'render_block_core/post-date', 'aki_hamano_blog_render_block_core_post_date', 10, 2 );
 
-// Wrap the code block in a figure element and inject the anchor as the figcaption.
+// Inject anchor as title attribute in the Code Block.
 function aki_hamano_blog_render_block_core_code( $block_content, $block ) {
 	$processor = new WP_HTML_Tag_Processor( $block_content );
 	if ( $processor->next_tag( 'pre' ) ) {
