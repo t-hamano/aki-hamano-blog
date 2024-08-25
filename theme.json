@@ -123,6 +123,14 @@
 			}
 		},
 		"blocks": {
+			"core/heading": {
+				"spacing": {
+					"margin": {
+						"top": "var(--wp--preset--spacing--80)"
+					}
+				},
+				"css": "& +h1,+h2,+h3,+h4,+h5,+h6{margin-top:var(--wp--preset--spacing--40);}"
+			},
 			"core/list": {
 				"spacing": {
 					"padding": {
@@ -209,12 +217,7 @@
 				"typography": {
 					"lineHeight": "var(--wp--custom--line-height--heading)"
 				},
-				"spacing": {
-					"margin": {
-						"top": "var(--wp--preset--spacing--80)"
-					}
-				},
-				"css": "& +h1,+h2,+h3,+h4,+h5,+h6{margin-top:var(--wp--preset--spacing--40);}"
+				"css": "& +.wp-block-heading{margin-top:var(--wp--preset--spacing--40);}"
 			},
 			"h1": {
 				"typography": {
