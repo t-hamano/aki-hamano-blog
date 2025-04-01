@@ -3,5 +3,10 @@
 	"themes": [ "." ],
 	"config": {
 		"WP_DEVELOPMENT_MODE": "theme"
+	},
+	"env": {
+		"development": {
+			"phpmyadminPort": 9000
+		}
 	}
 }
