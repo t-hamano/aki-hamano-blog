@@ -1,5 +1,5 @@
 module.exports = {
-	extends: [ '@wordpress/stylelint-config/scss' ],
+	extends: [ '@wordpress/stylelint-config/stylistic' ],
 	ignoreFiles: [
 		'assets/lib/**/*.css',
 	],
