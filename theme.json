@@ -275,5 +275,17 @@
 				}
 			}
 		}
-	}
+	},
+	"templateParts": [
+		{
+			"area": "header",
+			"name": "header",
+			"title": "ヘッダー"
+		},
+		{
+			"area": "footer",
+			"name": "footer",
+			"title": "フッター"
+		}
+	]
 }
