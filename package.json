@@ -1,6 +1,6 @@
 {
 	"name": "aki-hamano-blog",
-	"version": "1.0",
+	"version": "1.0.0",
 	"description": "Block theme for my blog.",
 	"author": "Aki Hamano",
 	"license": "GPL-2.0-or-later",
@@ -23,8 +23,8 @@
 		"npm": "10.5.0"
 	},
 	"devDependencies": {
-		"@wordpress/env": "^10.9.0",
-		"@wordpress/scripts": "^30.1.0"
+		"@wordpress/env": "^10.21.0",
+		"@wordpress/scripts": "^30.14.1"
 	},
 	"scripts": {
 		"wp-env": "wp-env",
