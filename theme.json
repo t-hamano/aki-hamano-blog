@@ -310,11 +310,6 @@
 			"area": "footer",
 			"name": "footer",
 			"title": "フッター"
-		},
-		{
-			"area": "uncategorized",
-			"name": "pagination",
-			"title": "ページネーション"
 		}
 	]
 }
