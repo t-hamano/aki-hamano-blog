@@ -21,11 +21,4 @@ jobs:
           ssh-keyscan -p ${{ secrets.SSH_PORT }} ${{ secrets.TARGET_SERVER }} >> ~/.ssh/known_hosts
 
       - name: Deploy
-        run: |
-          rsync --archive --compress --delete-after --human-readable \
-            -e "ssh -p ${{ secrets.SSH_PORT }}" \
-            --exclude=.git* \
-            --exclude=.github/ \
-            --exclude=.vscode/ \
-            --exclude=node_modules/ \
-            --exclude=vendor/ \
+        run: rsync --archive --compress --delete-after --human-readable -e "ssh -p ${{ secrets.SSH_PORT }}" --exclude-from=.rsync-exclude ./ "${{ secrets.REMOTE_USER }}@${{ secrets.TARGET_SERVER }}:${{ secrets.DESTONATION_PATH }}"

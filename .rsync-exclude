@@ -1,0 +1,16 @@
+.git*
+.github/
+.vscode/
+node_modules/
+vendor/
+.editorconfig
+.stylelintrc.js
+.wp-env.json
+composer.json
+composer.lock
+LICENSE
+package.json
+package-lock.json
+phpcs.ruleset.xml
+readme.txt
+.rsync-exclude
