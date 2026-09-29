@@ -24,7 +24,7 @@
 	},
 	"devDependencies": {
 		"@wordpress/env": "^11.15.0",
-		"@wordpress/scripts": "^34.2.0"
+		"@wordpress/scripts": "^36.0.0"
 	},
 	"scripts": {
 		"wp-env": "wp-env",
